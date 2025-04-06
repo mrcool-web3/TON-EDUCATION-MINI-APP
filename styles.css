@@ -1,0 +1,185 @@
+/* Base layout */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Home content */
+section.welcome {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.welcome h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+/* Courses */
+.course-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.course-list li {
+  background-color: #111;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+.course-list h3 {
+  margin: 0 0 10px;
+}
+
+.course-list button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.course-list button:hover {
+  background-color: #ccc;
+}
+
+.course-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.course-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #00aaff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Leaderboard */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #111;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  color: #fff;
+  background-color: #222;
+}
+
+td {
+  color: #ddd;
+}
+
+/* Certificates */
+.cert-card {
+  background-color: #111;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+.cert-card h3 {
+  margin-top: 0;
+}
+
+.cert-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Profile */
+.profile-info p {
+  margin: 10px 0;
+}
+
+.profile button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.profile {
+  max-width: 600px;
+  margin: 50px auto;
+  color: #fff;
+}
+
+.profile-box {
+  background-color: #1e1e1e;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  line-height: 1.8;
+}
