@@ -4,8 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>TON EDUCATION</title>
+    <style>/* Base Setup */
+:root {
+  --background: #0d0d0d;
+  --foreground: #ffffff;
+  --accent: #3b82f6; /* Optional TON Blue */
+  --border: #1f1f1f;
+  --card-bg: #1a1a1a;
+  --shadow: rgba(255, 255, 255, 0.05);
+  --radius: 16px;
+  --transition: 0.3s ease-in-out;
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000000;
+  padding: 1rem;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar a {
+  color: var(--foreground);
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.sidebar a:hover {
+  background-color: var(--card-bg);
+}
+
+.main {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Course Card */
+.course-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: var(--transition);
+  margin-bottom: 1.5rem;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.course-description {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--accent);
+  color: var(--foreground);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+}</style>
     <script defer scr="js/main.js"></script>
     <script defer src="js/telegram.js"></script>
     <script src="script.js"></script>
